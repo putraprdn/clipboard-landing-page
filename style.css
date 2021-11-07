@@ -1,0 +1,232 @@
+/* 
+---------------- Reset CSS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 
+---------------- Root  */
+:root {
+	/* ## Colors */
+	/* ### Primary */
+	--Strong-Cyan: hsl(171, 66%, 44%);
+	--Light-Blue: hsl(233, 100%, 69%);
+
+	/* ### Neutral */
+	--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+	--Grayish-Blue: hsl(201, 11%, 66%);
+
+    /* Font  */
+    --font: 'Bai Jamjuree', sans-serif;
+}
+/* 
+---------------- Main CSS */
+html {
+	font-size: 18px;
+}
+body {
+	min-height: 100vh;
+    font-family: var(--font);
+}
+/* 
+--------------- Template  */
+.title {
+    color: var(--Dark-Grayish-Blue);
+}
+.description {
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+}
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--font);
+
+}
+.section__sub-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.55rem;
+}
+.section__sub-description {
+    font-size: 0.85rem;
+    line-height: 2;
+}
+
+
+/* 
+---------------- */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    padding: 7rem 0;
+    text-align: center;
+}
+.main__title {
+    font-size: 2.5rem;
+    margin:  3.5rem 0 1rem;
+}
+.main__description {
+    width: 50%;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.main__button-group {
+    display: flex;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+.main__button {
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.main__button-ios {
+    background: var(--Strong-Cyan);
+    box-shadow: 0 3px 1px #20a089, 0 5px 40px -16px var(--Strong-Cyan);
+}
+.main__button-mac {
+    background: var(--Light-Blue);
+    box-shadow: 0 3px 1px #20a089, 0 5px 40px -16px var(--Light-Blue);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.snipper {
+    margin-top: 3rem;
+}
+.section__header-group {
+    width: 53%;
+    text-align: center;
+}
+.section__content-group {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 4rem 0 0;
+}
+.section__image {
+    margin-left: -3rem;
+}
+.section__sub-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 5rem 0 6.5rem;
+    flex-basis: 25%;
+}
+.section__sub-title:not(:first-child) {
+    margin-top: 3.5rem;
+}
+
+.access {
+    margin-top: 8rem;
+}
+.access__description {
+    margin-bottom: 5rem;
+}
+
+.workflow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.workflow__image-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 4rem 0 0;
+    padding: 0 8rem;
+}
+.workflow__image-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.workflow__image {
+    height: 35px;
+}
+
+.company {
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.download {
+    margin: 8rem 0;
+}
+.download__description {
+    width: 50%;
+}
+
+.footer {
+    display: flex;
+    background: #f5f6f8;
+    padding: 2.5rem 5rem;
+}
+.footer__logo {
+    height: 60px;
+    margin: 0 8rem 0 4.5rem;
+}
+.footer__link-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+.footer__link-item {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+.footer__social-group {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}

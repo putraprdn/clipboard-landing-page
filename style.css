@@ -118,7 +118,7 @@ body {
 }
 .main__button-mac {
     background: var(--Light-Blue);
-    box-shadow: 0 3px 1px #20a089, 0 5px 40px -16px var(--Light-Blue);
+    box-shadow: 0 3px 1px #4f62da, 0 5px 40px -16px var(--Light-Blue);
 }
 
 .section {
@@ -228,5 +228,18 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+/* 
+--------------- Active State  */
+.button--active:hover {
+    opacity: 0.7;
+    transition: 0.2s ease all;
+}
+.link--active:hover {
+    color: var(--Strong-Cyan);
+}
+.social-icon--active:hover {
+    filter: invert(47%) sepia(99%) saturate(329%) hue-rotate(119deg) brightness(91%) contrast(91%);
 }
